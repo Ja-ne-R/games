@@ -17,7 +17,7 @@ fetch('games.json')
     .then(response => response.json())
     .then(data => {
         const games = data.games;
-        const main = document.querySelector('main');
+        const gamemain = document.querySelector('#gamesmain');
         games.forEach(game => {
             const gameDiv = document.createElement('div');
             gameDiv.classList.add('game');
