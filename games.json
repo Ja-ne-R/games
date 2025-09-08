@@ -4,6 +4,11 @@
         "name": "Rock Paper Scissors",
         "description": "Rock paper scissors, but with health and points",
         "image": "rockscreen.png"
+        },
+        {
+            "name": "Rock Paper Scissors2",
+            "description": "Rock paper scissors, but with health and points",
+            "image": "rockscreen.png"
         }
     ]
 }

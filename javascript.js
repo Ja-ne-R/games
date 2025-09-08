@@ -13,7 +13,7 @@ rock.addEventListener("mouseleave", function () {
 
 
 // ----------------------------
-fetch('games.json')
+fetch('https://ja-ne-r.github.io/games/games.json')
     .then(response => response.json())
     .then(data => {
         const games = data.games;
@@ -22,11 +22,11 @@ fetch('games.json')
             const gameDiv = document.createElement('div');
             gameDiv.classList.add('game');
             gameDiv.innerHTML = `
-                <img src="${game.image}" alt="${game.name}">
-                <h3>${game.name}</h3>
-                <p>${game.description}</p>
+                <img src="${game.image}" class="gameimg" alt="${game.name}">
+                <h3 class="gamename">${game.name}</h3>
+                <p class="gametext">${game.description}</p>
             `;
-            gamesmain.appendChild(gameDiv);
+            gamemain.appendChild(gameDiv);
         });
     })
     .catch(error => console.error('Error loading games:', error));

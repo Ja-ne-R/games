@@ -140,3 +140,14 @@ aside img {
     to {border-radius: 25px;}
 }
 
+.gameimg {
+    width: 100%;
+}
+
+.game {
+    width: 30%;
+    height: 70%;
+    background-color: rgb(118, 118, 118);
+    
+
+}
