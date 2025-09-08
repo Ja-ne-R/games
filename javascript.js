@@ -26,7 +26,7 @@ fetch('games.json')
                 <h3>${game.name}</h3>
                 <p>${game.description}</p>
             `;
-            main.appendChild(gameDiv);
+            gamesmain.appendChild(gameDiv);
         });
     })
     .catch(error => console.error('Error loading games:', error));
