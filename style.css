@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #606060;
+    width: 80%;
+}
+
+#playgameimg {
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+
+    margin: auto;
+    display: block;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+nav {
+    border-top: 5px solid blueviolet;
+    background-color: #333;
+    color: white;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+nav a:active {
+    background-color: #5b5b5b;
+
+}
+
+#current {
+    color: blueviolet;
+    background-color: #5b5b5b;
+    border-top: 8px solid blueviolet;
+}
+
+header {
+    text-align: left;
+    padding: 20px 0;
+    background-color: blueviolet;
+    color: white;
+    margin-left: 20px;
+}
+
+main {
+    background-color: rgb(80, 80, 80);
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    /* Define two columns, one taking the remaining space, the other 30% for the aside */
+    grid-template-areas: "content aside";
+    /* Name the grid areas */
+    gap: 20px;
+    /* Add some space between columns */
+}
+#main {
+    /* Assuming this is the content area */
+    padding-left: 20px;
+    padding-bottom: 20px;
+    grid-area: content;
+    /* Assign this to the content area */
+}
+#main p {
+
+    color: rgb(224, 224, 224);
+}
+
+p {
+
+
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+#featured {
+    background-color: #777777;
+    color: black;
+    /* Remove width and margin-right: auto as grid will handle layout */
+    padding: 20px;
+    grid-area: aside;
+    /* Assign this to the aside area */
+    /* To align to the top within its grid cell */
+    align-self: start;
+    animation-name: out 1s forwards;
+    border: 8px solid #333;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 15px; */
+    border-radius: 25px;
+    border: 4px solid blueviolet;
+}
+
+/* aside img:hover {
+    border: 4px solid #333; */
+    /* animation-name: na;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+/* } */
+/* aside img:not(:hover) {
+    animation-name: out;
+    animation-duration: 1s;
+
+} */
+
+@keyframes test {
+    from {border-radius: 25px;}
+    to {border-radius: 0px;}
+
+}
+
+@keyframes out {
+    from {border-radius: 0px;}
+    to {border-radius: 25px;}
+}
+

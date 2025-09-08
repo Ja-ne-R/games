@@ -1,0 +1,9 @@
+{
+    "games": [
+        {
+        "name": "Rock Paper Scissors",
+        "description": "Rock paper scissors, but with health and points",
+        "image": "rockscreen.png"
+        }
+    ]
+}
