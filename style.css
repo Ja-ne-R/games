@@ -104,8 +104,8 @@ footer {
     grid-area: aside;
     /* Assign this to the aside area */
     /* To align to the top within its grid cell */
-    align-self: start;
-    animation-name: out 1s forwards;
+    align-self: flex-end;
+
     border: 8px solid #333;
 }
 
@@ -144,10 +144,27 @@ aside img {
     width: 100%;
 }
 
+/* Add this for the parent container */
+#gamesmain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Update .game for better sizing */
 .game {
     width: 30%;
-    height: 70%;
+    min-height: 200px; /* or whatever fits your content */
     background-color: rgb(118, 118, 118);
-    
-
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
 }
+/* 
+body img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid blueviolet;
+    animation-name: out 1s forwards;
+} */

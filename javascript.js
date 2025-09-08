@@ -1,14 +1,14 @@
 const rock = document.querySelector("#rock img");
 const aside = document.getElementById("featured");
+const  img = document.querySelector("body img");
 
 
-
-rock.addEventListener("mouseenter", function () {
-    rock.style.animation = "test 1s forwards";
+img.addEventListener("mouseenter", function () {
+    img.style.animation = "test 1s forwards";
 });
 
-rock.addEventListener("mouseleave", function () {
-    rock.style.animation = "out 1s forwards";
+img.addEventListener("mouseleave", function () {
+    img.style.animation = "out 1s forwards";
 });
 
 
