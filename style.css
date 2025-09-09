@@ -154,7 +154,7 @@ aside img {
 
 /* Update .game for better sizing */
 .game {
-    width: 30%;
+    width: 25%;
     min-height: 200px; /* or whatever fits your content */
     background-color: rgb(118, 118, 118);
     margin: 0;
@@ -164,13 +164,13 @@ aside img {
 }
 
 @keyframes gamehover {
-    from {width: 30%;}
-    to {width: 35%;}
+    from {width: 25%;}
+    to {width: 30%;}
 }
 
 @keyframes gamehoverout {
-    from {width: 35%;}
-    to {width: 30%;}
+    from {width: 30%;}
+    to {width: 25%;}
 }
 
 /* .game:hover {

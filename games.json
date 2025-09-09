@@ -3,12 +3,14 @@
         {
         "name": "Rock Paper Scissors",
         "description": "Rock paper scissors, but with health and points",
-        "image": "rockscreen.png"
+        "image": "rockscreen.png",
+        "link": "https://ja-ne-r.github.io/rock/"
         },
         {
             "name": "Rock Paper Scissors2",
             "description": "Rock paper scissors, but with health and points",
-            "image": "rockscreen.png"
+            "image": "rockscreen.png",
+            "link": "https://ja-ne-r.github.io/rock/"
         },
         {
         "name": "Placeholder",

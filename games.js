@@ -7,9 +7,9 @@ fetch('https://ja-ne-r.github.io/games/games.json')
             const gameDiv = document.createElement('div');
             gameDiv.classList.add('game');
             gameDiv.innerHTML = `
-                <img src="${game.image}" class="imp" alt="${game.name}">
+                <a href="${game.link}"><img src="${game.image}" class="imp" alt="${game.name}">
                 <h3 class="gamename">${game.name}</h3>
-                <p class="gametext">${game.description}</p>
+                <p class="gametext">${game.description}</p></a>
             `;
             gamemain.appendChild(gameDiv);
         });
