@@ -19,6 +19,16 @@
             "name": "Placeholder2",
             "description": "This is a placeholder game",
             "image": "rockscreen.png"
+        },
+        {
+            "name": "Placeholder3",
+            "description": "This is a placeholder game",
+            "image": "rockscreen.png"
+        },
+        {
+            "name": "Placeholder4",
+            "description": "This is a placeholder game",
+            "image": "rockscreen.png"
         }
     ]
 }
