@@ -32,5 +32,13 @@
             "description": "This is a placeholder game",
             "image": "rockscreen.png"
         }
+    ],
+    "projects": [
+        {
+        "name": "Allosaurus",
+        "description": "A simple allosaurus model",
+        "image": "mathgame.png"
+        }
     ]
+
 }
