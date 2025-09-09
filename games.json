@@ -7,10 +7,10 @@
         "link": "https://ja-ne-r.github.io/rock/"
         },
         {
-            "name": "Rock Paper Scissors2",
-            "description": "Rock paper scissors, but with health and points",
-            "image": "rockscreen.png",
-            "link": "https://ja-ne-r.github.io/rock/"
+            "name": "Math Game",
+            "description": "A simple math game",
+            "image": "mathgame.png",
+            "link": "https://ja-ne-r.github.io/mathgame/"
         },
         {
         "name": "Placeholder",
