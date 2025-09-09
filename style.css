@@ -78,15 +78,16 @@ main {
     /* Assign this to the content area */
 }
 #main p {
-
     color: rgb(224, 224, 224);
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-p {
+/* p {
 
 
     margin-bottom: 0;
-}
+} */
 
 footer {
     background-color: #333;
@@ -105,7 +106,7 @@ footer {
     /* Assign this to the aside area */
     /* To align to the top within its grid cell */
     align-self: flex-end;
-
+    margin: auto;
     border: 8px solid #333;
 }
 
@@ -161,6 +162,20 @@ aside img {
     border-radius: 10px;
     padding: 10px;
 }
+
+@keyframes gamehover {
+    from {width: 30%;}
+    to {width: 35%;}
+}
+
+@keyframes gamehoverout {
+    from {width: 35%;}
+    to {width: 30%;}
+}
+
+/* .game:hover {
+    width: 35%;
+} */
 /* 
 body img {
     max-width: 100%;
@@ -168,3 +183,8 @@ body img {
     border: 5px solid blueviolet;
     animation-name: out 1s forwards;
 } */
+
+.imp {
+    width: 100%;
+    border-radius: 25px;
+}

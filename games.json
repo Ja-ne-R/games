@@ -9,6 +9,11 @@
             "name": "Rock Paper Scissors2",
             "description": "Rock paper scissors, but with health and points",
             "image": "rockscreen.png"
+        },
+        {
+        "name": "Placeholder",
+        "description": "This is a placeholder game",
+        "image": "rockscreen.png"
         }
     ]
 }
