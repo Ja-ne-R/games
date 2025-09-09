@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-#logo {
+#logodiv {
 
     margin: auto;
     display: block;
@@ -63,12 +63,16 @@ header {
 main {
     background-color: rgb(80, 80, 80);
     display: grid;
+    /* Define two columns */
     grid-template-columns: 1fr 30%;
-    /* Define two columns, one taking the remaining space, the other 30% for the aside */
-    grid-template-areas: "content aside";
-    /* Name the grid areas */
+    /* Define two rows: the first for the aside and potentially the top part of the content, the second for the rest of the content */
+    grid-template-rows: auto 1fr;
+    /* Name the grid areas: aside in the top right, content spanning both rows on the left */
+    grid-template-areas:
+        "content aside"
+        "content .";
+    /* The '.' represents an empty cell */
     gap: 20px;
-    /* Add some space between columns */
 }
 #main {
     /* Assuming this is the content area */
@@ -100,16 +104,13 @@ footer {
 #featured {
     background-color: #777777;
     color: black;
-    /* Remove width and margin-right: auto as grid will handle layout */
     padding: 20px;
     grid-area: aside;
     /* Assign this to the aside area */
-    /* To align to the top within its grid cell */
-    align-self: flex-end;
     margin: auto;
+    /* Keep or adjust margin as needed for horizontal centering within its cell */
     border: 8px solid #333;
 }
-
 aside img {
     width: 100%;
     height: auto;
@@ -147,14 +148,14 @@ aside img {
 
 /* Add this for the parent container */
 #gamesmain {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
     gap: 20px;
 }
 
 /* Update .game for better sizing */
 .game {
-    width: 25%;
+
     min-height: 200px; /* or whatever fits your content */
     background-color: rgb(118, 118, 118);
     margin: 0;
@@ -164,13 +165,13 @@ aside img {
 }
 
 @keyframes gamehover {
-    from {width: 25%;}
-    to {width: 30%;}
+    from {width: 100%;}
+    to {width: 105%;}
 }
 
 @keyframes gamehoverout {
-    from {width: 30%;}
-    to {width: 25%;}
+    from {width: 105%;}
+    to {width: 100%;}
 }
 
 /* .game:hover {
@@ -190,7 +191,7 @@ body img {
 }
 
 
-#logo img {
+#logodiv img {
     width: 100px;
     height: auto;
     margin: 10px;
@@ -205,4 +206,9 @@ header h1 {
     padding-left: 130px;
     padding-top: 20px;
     text-shadow: #333 5px 5px 4px, rgb(91, 37, 141) 10px 10px 8px, rgb(132, 0, 255) 15px 15px 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

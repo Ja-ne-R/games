@@ -20,3 +20,6 @@ rock.addEventListener("mouseenter", function () {
 rock.addEventListener("mouseleave", function () {
     rock.style.animation = "out 1s forwards";
 });
+
+
+
