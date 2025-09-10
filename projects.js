@@ -12,7 +12,13 @@ fetch('https://ja-ne-r.github.io/games/games.json')
             img.className = 'proimp';
             img.alt = project.name;
 
+            projDiv.addEventListener('mouseenter', function() {
 
+                img.style.borderRadius = '0px';
+            });
+            projDiv.addEventListener('mouseleave', function() {
+                img.style.borderRadius = '24px';
+            });
             img.addEventListener('click', function() {
                 console.log('Image clicked!');
                 const modal = document.getElementById("modal");
