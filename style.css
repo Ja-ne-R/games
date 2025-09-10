@@ -59,6 +59,10 @@ header {
     color: white;
     margin-left: 20px;
 }
+main {
+    background-color: rgb(80, 80, 80);
+}
+
 
 #indexmain {
     background-color: rgb(80, 80, 80);
@@ -150,7 +154,7 @@ aside img {
     display: block;
     display: grid;
     grid-template-columns: repeat(4, 24%);
-    gap: 15px;
+    gap: 13px;
 
 }
 
@@ -175,8 +179,8 @@ aside img {
 /* edit games grid box here */
 #gamesmain {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    gap: 5px;
+    grid-template-columns: repeat(4, 24%);
+    gap: 13px;
 }
 
 /* Update .game for better sizing */
