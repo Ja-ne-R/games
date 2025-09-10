@@ -60,7 +60,7 @@ header {
     margin-left: 20px;
 }
 
-main {
+#indexmain {
     background-color: rgb(80, 80, 80);
     display: grid;
     /* Define two columns */
@@ -142,8 +142,34 @@ aside img {
     to {border-radius: 25px;} */
 /* } */
 
-.gameimg {
+/* .gameimg {
     width: 100%;
+} */
+
+#projects {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 10px;
+
+}
+
+/* #projectsmain {
+
+} */
+
+
+.projects {
+
+
+
+    background-color: rgb(118, 118, 118);
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 10px;
+    transition: 0.3s;
+    border: #333 solid 8px;
 }
 
 /* edit games grid box here */
@@ -241,7 +267,7 @@ a {
 }
 
 
-.projects {
+/* .projects {
     background-color: #777777;
     color: black;
     padding: 20px;
@@ -249,7 +275,7 @@ a {
     border: 8px solid #333;
     border-radius: 15px;
     width: 30%;
-}
+} */
 
 #modal {
     display: none;

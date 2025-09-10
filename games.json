@@ -48,6 +48,21 @@
         "name": "Trike",
         "description": "A simple triceratops",
         "image": "trike.png"
+        },
+        {
+        "name": "Placeholder",
+        "description": "This is a placeholder project",
+        "image": "icon.png"
+        },
+        {
+        "name": "Placeholder2",
+        "description": "This is a placeholder project",
+        "image": "icon.png"
+        },
+        {
+        "name": "Placeholder3",
+        "description": "This is a placeholder project",
+        "image": "icon.png"
         }
     ]
 
