@@ -149,8 +149,8 @@ aside img {
 #projects {
     display: block;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    gap: 10px;
+    grid-template-columns: repeat(4, 24%);
+    gap: 15px;
 
 }
 
