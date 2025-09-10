@@ -35,9 +35,19 @@
     ],
     "projects": [
         {
-        "name": "Allosaurus",
-        "description": "A simple allosaurus model",
+        "name": "Ceratosaurus icon",
+        "description": "A simple ceratosaurus icon",
         "image": "icon.png"
+        },
+        {
+        "name": "Raptor",
+        "description": "A simple raptor",
+        "image": "raptor.png"
+        },
+        {
+        "name": "Trike",
+        "description": "A simple triceratops",
+        "image": "trike.png"
         }
     ]
 
