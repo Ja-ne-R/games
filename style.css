@@ -12,7 +12,6 @@ body {
 }
 
 #logodiv {
-
     margin: auto;
     display: block;
     background-color: blueviolet;
@@ -35,16 +34,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
-
 }
 
 nav a:hover {
     color: white;
 }
-/* nav a:active {
-    background-color: #5b5b5b;
-
-} */
 
 #current {
     color: rgb(200, 142, 255);
@@ -63,27 +57,20 @@ main {
     background-color: rgb(80, 80, 80);
 }
 
-
 #indexmain {
     background-color: rgb(80, 80, 80);
     display: grid;
-    /* Define two columns */
     grid-template-columns: 1fr 30%;
-    /* Define two rows: the first for the aside and potentially the top part of the content, the second for the rest of the content */
     grid-template-rows: auto 1fr;
-    /* Name the grid areas: aside in the top right, content spanning both rows on the left */
     grid-template-areas:
         "content aside"
         "content .";
-    /* The '.' represents an empty cell */
     gap: 20px;
 }
 #main {
-    /* Assuming this is the content area */
     padding-left: 20px;
     padding-bottom: 20px;
     grid-area: content;
-    /* Assign this to the content area */
 }
 #main p {
     color: rgb(224, 224, 224);
@@ -91,18 +78,11 @@ main {
     margin-bottom: 10px;
 }
 
-/* p {
-
-
-    margin-bottom: 0;
-} */
-
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-
 }
 
 #featured {
@@ -110,63 +90,24 @@ footer {
     color: black;
     padding: 20px;
     grid-area: aside;
-    /* Assign this to the aside area */
     margin: auto;
-    /* Keep or adjust margin as needed for horizontal centering within its cell */
     border: 8px solid #333;
 }
 aside img {
     width: 100%;
     height: auto;
-    /* margin-bottom: 15px; */
     border-radius: 25px;
     border: 4px solid blueviolet;
 }
-
-/* aside img:hover {
-    border: 4px solid #333; */
-    /* animation-name: na;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; */
-/* } */
-/* aside img:not(:hover) {
-    animation-name: out;
-    animation-duration: 1s;
-
-} */
-
-/* @keyframes test {
-    from {border-radius: 25px;}
-    to {border-radius: 0px;}
-
-}
-
-@keyframes out {
-    from {border-radius: 0px;}
-    to {border-radius: 25px;} */
-/* } */
-
-/* .gameimg {
-    width: 100%;
-} */
 
 #projects {
     display: block;
     display: grid;
     grid-template-columns: repeat(4, 24%);
     gap: 13px;
-
 }
 
-/* #projectsmain {
-
-} */
-
-
 .projects {
-
-
-
     background-color: rgb(118, 118, 118);
     margin: 0;
     box-sizing: border-box;
@@ -176,17 +117,14 @@ aside img {
     border: #333 solid 8px;
 }
 
-/* edit games grid box here */
 #gamesmain {
     display: grid;
     grid-template-columns: repeat(4, 24%);
     gap: 13px;
 }
 
-/* Update .game for better sizing */
 .game {
-
-    min-height: 200px; /* or whatever fits your content */
+    min-height: 200px;
     background-color: rgb(118, 118, 118);
     margin: 0;
     box-sizing: border-box;
@@ -202,27 +140,6 @@ aside img {
     border-radius: 0px;
     border-color: blueviolet;
 }
-
-/* @keyframes gamehover {
-    from {width: 100%;}
-    to {width: 105%;}
-}
-
-@keyframes gamehoverout {
-    from {width: 105%;}
-    to {width: 100%;}
-} */
-
-/* .game:hover {
-    width: 35%;
-} */
-/* 
-body img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid blueviolet;
-    animation-name: out 1s forwards;
-} */
 
 .imp {
     width: 100%;
@@ -253,7 +170,6 @@ body img {
     height: auto;
     margin: 10px;
     display: block;
-
     float: left;
     border: black solid 5px;
     border-radius: 80px;
@@ -270,17 +186,6 @@ a {
     color: inherit;
 }
 
-
-/* .projects {
-    background-color: #777777;
-    color: black;
-    padding: 20px;
-    margin: 20px;
-    border: 8px solid #333;
-    border-radius: 15px;
-    width: 30%;
-} */
-
 #modal {
     display: none;
 }
@@ -288,35 +193,22 @@ a {
 .xbutton:hover {
     color: red;
     cursor: pointer;
-    
-    
 }
 
-/* The Modal (background) */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -324,7 +216,6 @@ a {
     max-width: 700px;
 }
 
-/* Caption of Modal Image */
 #caption {
     margin: auto;
     display: block;
@@ -336,7 +227,6 @@ a {
     height: 150px;
 }
 
-/* Add Animation */
 .modal-content,
 #caption {
     -webkit-animation-name: zoom;
@@ -365,7 +255,6 @@ a {
     }
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
