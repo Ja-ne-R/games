@@ -3,17 +3,17 @@ fetch('https://ja-ne-r.github.io/games/games.json')
     .then(data => {
         const projects = data.projects;
         const main = document.querySelector('main');
-        games.forEach(game => {
+        projects.forEach(projects => {
             const projDiv = document.createElement('div');
-            projDiv.classList.add('game');
+            projDiv.classList.add('projects');
             projDiv.innerHTML = `
-                <a href="${game.link}"><img src="${game.image}" class="imp" alt="${game.name}">
-                <h3 class="gamename">${game.name}</h3>
-                <p class="gametext">${game.description}</p></a>
+                <img src="${projects.image}" class="imp" alt="${projects.name}">
+                <h3 class="projectname">${projects.name}</h3>
+                <p class="projecttext">${projects.description}</p>
             `;
-            main.appendChild(gameDiv);
+            main.appendChild(projDiv);
         });
         const img = document.getElementsByClassName("imp");
 
     })
-    .catch(error => console.error('Error loading games:', error));
+    .catch(error => console.error('Error loading projects:', error));
