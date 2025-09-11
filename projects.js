@@ -13,11 +13,14 @@ fetch('https://ja-ne-r.github.io/games/games.json')
             img.alt = project.name;
 
             projDiv.addEventListener('mouseenter', function() {
-
+                img.style.scale = '1.05';
                 img.style.borderRadius = '0px';
+                projDiv.style.zIndex = '101';
             });
             projDiv.addEventListener('mouseleave', function() {
                 img.style.borderRadius = '24px';
+                img.style.scale = '1';
+                projDiv.style.zIndex = '10';
             });
             img.addEventListener('click', function() {
                 console.log('Image clicked!');

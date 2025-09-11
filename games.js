@@ -15,27 +15,28 @@ fetch('https://ja-ne-r.github.io/games/games.json')
         });
         const img = document.getElementsByClassName("imp");
 
-        const imgnum = img.length;
-        for (let i = 0; i < imgnum; i++) {
-            img[i].addEventListener("mouseenter", function () {
-            });
-            img[i].addEventListener("mouseleave", function () {
-            });
-        }
+        // const imgnum = img.length;
+        // for (let i = 0; i < imgnum; i++) {
+        //     img[i].addEventListener("mouseenter", function () {
+        //     });
+        //     img[i].addEventListener("mouseleave", function () {
+        //     });
+        // }
 
         const gamediv = document.getElementsByClassName("game");
-
+        
         const gamedivnum = gamediv.length;
         for (let i = 0; i < gamedivnum; i++) {
             gamediv[i].addEventListener("mouseenter", function () {
-                gamediv[i].style.animation = "gamehover 0.5s forwards";
-                img[i].style.animation = "test 1s forwards";
+                img[i].style.scale = '1.05';
+                img[i].style.borderRadius = '0px';
+                gamediv[i].style.zIndex = '101';
 
             });
             gamediv[i].addEventListener("mouseleave", function () {
-                gamediv[i].style.animation = "gamehoverout 0.5s forwards";
-                img[i].style.animation = "out 1s forwards";
-
+                img[i].style.scale = '1';
+                img[i].style.borderRadius = '24px';
+                gamediv[i].style.zIndex = '10';
             });
         }
 
