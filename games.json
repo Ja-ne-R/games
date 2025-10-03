@@ -13,9 +13,10 @@
             "link": "https://ja-ne-r.github.io/mathgame/"
         },
         {
-        "name": "Placeholder",
-        "description": "This is a placeholder game",
-        "image": "rockscreen.png"
+        "name": "Cardgame",
+        "description": "A monster card fighting game",
+        "image": "cardgame.png",
+        "link": "https://ja-ne-r.github.io/cardgame/"
         },
         {
             "name": "Placeholder2",

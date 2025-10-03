@@ -1,5 +1,5 @@
 const gamemain = document.querySelector('#gamesmain');
-x = 0;
+            x = 0;
 const closeButton = document.getElementById("close");
 fetch('https://ja-ne-r.github.io/games/games.json')
     .then(response => response.json())
@@ -19,7 +19,7 @@ fetch('https://ja-ne-r.github.io/games/games.json')
                 <h3 class="gamename">${game.name}</h3>
                 <p class="gametext">${game.description}</p>
             `;
-            gameDiv.addEventListener("click", function () {
+            gameDiv.addEventListener("click", function() {
                 inBrowser(game);
             });
 
@@ -61,7 +61,7 @@ fetch('https://ja-ne-r.github.io/games/games.json')
     })
     .catch(error => console.error('Error loading games:', error));
 
-function inBrowser(game) {
+function inBrowser(game){
     console.log("it activates");
     let link = `${game.link}`;
     console.log(link);
@@ -71,12 +71,12 @@ function inBrowser(game) {
     createIframe = document.createElement("iframe");
     createIframe.setAttribute("src", link);
     createIframe.style.zIndex = "100";
-    createIframe.style.width = "840px";
-    createIframe.style.height = "680px";
+    createIframe.style.width = "640px";
+    createIframe.style.height = "480px";
     document.getElementById("iframe").appendChild(createIframe);
 
 }
-function unhide() {
+function unhide(){
     gamemain.style.display = "grid";
     document.querySelector("iframe").remove();
 }

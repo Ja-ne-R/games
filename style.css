@@ -279,3 +279,25 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+iframe{
+    margin: auto;
+    border: 15px black solid;
+    border-radius: 15px;
+}
+
+
+#iframe{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#close{
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid rgb(48, 0, 0);
+    background-color: rgb(136, 0, 0);
+}
