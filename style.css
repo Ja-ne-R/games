@@ -297,7 +297,17 @@ align-items: center;
 
 #close{
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 50%;
     border: 5px solid rgb(48, 0, 0);
     background-color: rgb(136, 0, 0);
+    display: none;
+    transition: 1s;
+    z-index: 200;
+    position: sticky;
+
+}
+#close:hover{
+    border: 5px solid rgb(119, 0, 0);
+    background-color: rgb(239, 0, 0);
+    scale: 1.2;
 }

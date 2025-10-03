@@ -74,11 +74,12 @@ function inBrowser(game) {
     createIframe.style.width = "840px";
     createIframe.style.height = "680px";
     document.getElementById("iframe").appendChild(createIframe);
-
+    closeButton.style.display = "block";
 }
 function unhide() {
     gamemain.style.display = "grid";
     document.querySelector("iframe").remove();
+    closeButton.style.display = "none";
 }
 closeButton.addEventListener("click", unhide)
 
